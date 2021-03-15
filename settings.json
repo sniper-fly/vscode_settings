@@ -8,7 +8,7 @@
         "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "php": "php",
-        "python": "python -u",
+        "python": "python3 -u",
         "perl": "perl",
         "perl6": "perl6",
         "ruby": "ruby",
@@ -51,10 +51,72 @@
     "code-runner.runInTerminal": true,
     "git.autofetch": true,
     "git.confirmSync": false,
-    "git.enableSmartCommit": true,
-    "window.zoomLevel": 0,
-    "editor.renderWhitespace": "boundary",
+	"git.enableSmartCommit": true,
+    "editor.renderWhitespace": "boundary", // 1文字以内に接していたら
     "editor.tabSize": 4,
-    "editor.insertSpaces": false,
-    "editor.detectIndentation": false,
+    "editor.insertSpaces": false, //tabを押したときスペースが入らないように
+	"editor.detectIndentation": false,
+	"C_Cpp.updateChannel": "Insiders",
+	"workbench.editor.enablePreview": false, //ファイルを常に新しいエディタに開く
+
+	"42header.email": "rnakai@student.42tokyo.jp",
+	"42header.username": "rnakai",
+
+	"sync.gist": "d06f434e634ed5173c9948e192f0e36d",
+	"sync.autoUpload": true,
+	"workbench.editor.closeEmptyGroups": false, //画面いっぱいで折り返す
+
+	"vim.useSystemClipboard": true, //ヤンクした文章をコピー
+
+	//norm対策, 80行に線
+	"editor.rulers": [
+		80
+	],
+	"editor.minimap.enabled": false,
+	"terminal.integrated.shell.linux": "/bin/zsh",
+	"editor.acceptSuggestionOnCommitCharacter": false,
+	"typescript.suggest.paths": false, //path intellisenseを使うための設定
+	"editor.suggestSelection": "first",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+	"todohighlight.keywords": [
+			"DEBUG:",
+			"REVIEW:",
+			{
+				"text": "NOTE:",
+				"color": "#ff0000",
+				"backgroundColor": "yellow",
+				"overviewRulerColor": "grey"
+			},
+			{
+				"text": "HACK:",
+				"color": "#000",
+				"isWholeLine": false,
+			},
+			{
+				"text": "TODO:",
+				"color": "#000",
+			}
+	],
+	"todohighlight.include": [
+			"**/*.js",
+			"**/*.jsx",
+			"**/*.ts",
+			"**/*.tsx",
+			"**/*.html",
+			"**/*.php",
+			"**/*.css",
+			"**/*.scss",
+			"**/*.c",
+			"**/*.h",
+	],
+	"ruby.intellisense": "rubyLocate",
+	"C/C++ Include Guard.Prevent Decimal": true,
+	"C/C++ Include Guard.Comment Style": "None",
+	"C/C++ Include Guard.Macro Type": "Filename",
+	"C/C++ Include Guard.Insert Blank Line": true,
+	"C/C++ Include Guard.Remove Extension": false,
+	"editor.wordWrap": "on",
+	"hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjowLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODI3LFwiaGVpZ2h0XCI6MTE2OX0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
+	"liveshare.authenticationProvider": "Microsoft",
 }

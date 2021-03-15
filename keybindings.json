@@ -31,4 +31,26 @@
 		"when": "inQuickOpen && inViewsPicker"
 	},
 
+	{
+		"key": "alt+;",
+		"command": "workbench.action.focusFirstEditorGroup",
+		"when": "filesExplorerFocus"
+	},
+
+	{
+		"key": "alt+;",
+		"command": "workbench.action.focusSideBar",
+		"when": "editorTextFocus"
+	},
+
+	{
+		"key": "ctrl+w",
+		"command": "-extension.vim_ctrl+w",
+		"when": "editorTextFocus && vim.active && vim.use<C-w> && !inDebugRepl"
+	},
+	{
+    "key": "tab",
+    "command": "-acceptSelectedSuggestion",
+    "when": "suggestWidgetVisible && textInputFocus"
+  	}
 ]
