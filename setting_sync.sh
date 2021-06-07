@@ -1,8 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 
-cp /home/sniper-fly/win/AppData/Roaming/Code/User/keybindings.json /home/sniper-fly/win/AppData/Roaming/Code/User/settings.json ~/vscode_settings
-&& pushd ~/vscode_settings
-&& git add -A
-&& git commit -m 'vs code settings updated'
+now=`date`
+vscode_path="${HOME}/.config/Code/User"
+
+cp "${vscode_path}/keybindings.json" "${vscode_path}/settings.json" . \
+&& git add -A \
+&& git commit -m "update on ${now}" \
 && git push
-&& pushd
+

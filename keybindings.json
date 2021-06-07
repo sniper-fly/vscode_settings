@@ -1,3 +1,4 @@
+// Place your key bindings in this file to override the defaults
 // 既定値を上書きするには、このファイル内にキー バインドを挿入します
 [
     {
@@ -52,5 +53,43 @@
     "key": "tab",
     "command": "-acceptSelectedSuggestion",
     "when": "suggestWidgetVisible && textInputFocus"
-  	}
+	},
+	{
+		"key": "ctrl+k ctrl+\\",
+		"command": "workbench.action.splitEditor"
+	},
+	{
+		"key": "ctrl+\\",
+		"command": "-workbench.action.splitEditor"
+	},
+	{
+		"key": "ctrl+\\",
+		"command": "workbench.action.splitEditorOrthogonal"
+	},
+	{
+		"key": "ctrl+k ctrl+\\",
+		"command": "-workbench.action.splitEditorOrthogonal"
+	},
+	{
+		"key": "ctrl+shift+q",
+		"command": "workbench.action.quit"
+	},
+	{
+		"key": "ctrl+q",
+		"command": "-workbench.action.quit"
+	},
+
+	// 今開いているファイルの場所でターミナルを新しく開く
+	{
+	"key": "ctrl+shift+x",
+	"command": "workbench.action.terminal.newWithCwd",
+		"args": {
+			"cwd": "${fileDirname}"
+		}
+	},
+	{
+		"key": "ctrl+shift+x",
+		"command": "-workbench.view.extensions",
+		"when": "viewContainer.workbench.view.extensions.enabled"
+	}
 ]
