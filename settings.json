@@ -52,9 +52,7 @@
     "git.autofetch": true,
     "git.confirmSync": false,
 	"git.enableSmartCommit": true,
-    "editor.renderWhitespace": "boundary", // 1文字以内に接していたら
-    "editor.tabSize": 4,
-    "editor.insertSpaces": false, //tabを押したときスペースが入らないように
+"editor.renderWhitespace": "boundary", //tabを押したときスペースが入らないように
 	"editor.detectIndentation": false,
 	"C_Cpp.updateChannel": "Insiders",
 	"workbench.editor.enablePreview": false, //ファイルを常に新しいエディタに開く
@@ -124,4 +122,16 @@
 	// "liveshare.authenticationProvider": "Microsoft",
 	"vim.enableNeovim": true,
 	"vim.neovimPath": "/usr/bin/nvim",
+	"editor.cursorStyle": "line",
+	"editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "$HOME/.vimrc",
+
+    // vscode,vimでESCした時に日本語から自動で英語に切り替えてくれる上に
+    // 再度インサートモードに入った時に自動で日本語に切り替えてくれる
+    "vim.autoSwitchInputMethod.enable": true,
+    "vim.autoSwitchInputMethod.defaultIM": "xkb:us::eng",
+    "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/bin/ibus engine",
+    "vim.autoSwitchInputMethod.switchIMCmd": "/usr/bin/ibus engine {im}",
 }
